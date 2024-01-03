@@ -1,0 +1,42 @@
+package com.example.demo.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
+
+@Data
+@Entity // 預設 @Entity(name = "student_score")
+public class StudentScore {
+
+	@Id // 主鍵
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	//@Column(name = "name", length = 255, nullable = true, unique = false) // 預設值可不寫
+	private String name;
+	
+	//@Column(columnDefinition = "Integer default 0") // 預設 name = "chinese_score" 
+	private Integer chineseScore;
+	
+	//@Column(columnDefinition = "Integer default 0")
+	private Integer englishScore;
+	
+	//@Column(columnDefinition = "Integer default 0")
+	private Integer mathScore;
+	
+	//@Column(columnDefinition = "Integer default 0")
+	private Integer totalScore;
+	
+	//@Column(columnDefinition = "Double default 0")
+	private Double averageScore;
+	
+	// 更新總分與平均
+	public void updateTotalAndAverage() {
+		setTotalScore(chineseScore + englishScore + mathScore);
+		setAverageScore(totalScore / 3.0);
+	}
+	
+}
