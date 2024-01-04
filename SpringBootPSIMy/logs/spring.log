@@ -1,0 +1,58 @@
+2024-01-04T14:01:47.009+08:00  INFO 16632 --- [main] c.e.psi.SpringBootPsiMyApplication       : Starting SpringBootPsiMyApplication using Java 17.0.9 with PID 16632 (C:\Users\NTPU\Documents\SpringBoot20240103\SpringBootPSIMy\target\classes started by NTPU in C:\Users\NTPU\Documents\SpringBoot20240103\SpringBootPSIMy)
+2024-01-04T14:01:47.010+08:00  INFO 16632 --- [main] c.e.psi.SpringBootPsiMyApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-04T14:01:47.301+08:00  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-04T14:01:47.301+08:00  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-01-04T14:01:47.311+08:00  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-01-04T14:01:47.316+08:00  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-04T14:01:47.317+08:00  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-04T14:01:47.319+08:00  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-01-04T14:01:47.601+08:00  INFO 16632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2024-01-04T14:01:47.609+08:00  INFO 16632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-04T14:01:47.610+08:00  INFO 16632 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-04T14:01:47.637+08:00  INFO 16632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-04T14:01:47.638+08:00  INFO 16632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 607 ms
+2024-01-04T14:01:47.897+08:00  INFO 16632 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-04T14:01:47.914+08:00  INFO 16632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-04T14:01:48.005+08:00  INFO 16632 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60652518
+2024-01-04T14:01:48.007+08:00  INFO 16632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-04T14:01:48.206+08:00  INFO 16632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-04T14:01:48.227+08:00  WARN 16632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-04T14:01:48.240+08:00  INFO 16632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-04T14:01:48.368+08:00  WARN 16632 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-01-04T14:01:48.587+08:00  INFO 16632 --- [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\NTPU\.keystore] using alias [tomcat] with trust store [null]
+2024-01-04T14:01:48.602+08:00  INFO 16632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path ''
+2024-01-04T14:01:48.609+08:00  INFO 16632 --- [main] c.e.psi.SpringBootPsiMyApplication       : Started SpringBootPsiMyApplication in 1.806 seconds (process running for 2.155)
+2024-01-04T14:02:51.178+08:00  INFO 16632 --- [https-jsse-nio-8443-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-04T14:02:51.179+08:00  INFO 16632 --- [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-04T14:02:51.179+08:00  INFO 16632 --- [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-01-04T14:36:28.046+08:00  INFO 16632 --- [RMI TCP Connection(39)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-01-04T14:36:28.052+08:00  INFO 16632 --- [RMI TCP Connection(39)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-04T14:36:28.054+08:00  INFO 16632 --- [RMI TCP Connection(39)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-04T14:36:28.055+08:00  INFO 16632 --- [RMI TCP Connection(39)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-04T14:36:35.294+08:00  INFO 16856 --- [main] c.e.psi.SpringBootPsiMyApplication       : Starting SpringBootPsiMyApplication using Java 17.0.9 with PID 16856 (C:\Users\NTPU\Documents\SpringBoot20240103\SpringBootPSIMy\target\classes started by NTPU in C:\Users\NTPU\Documents\SpringBoot20240103\SpringBootPSIMy)
+2024-01-04T14:36:35.295+08:00  INFO 16856 --- [main] c.e.psi.SpringBootPsiMyApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-04T14:36:35.587+08:00  INFO 16856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-04T14:36:35.587+08:00  INFO 16856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-01-04T14:36:35.597+08:00  INFO 16856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2024-01-04T14:36:35.602+08:00  INFO 16856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-04T14:36:35.603+08:00  INFO 16856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-04T14:36:35.606+08:00  INFO 16856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-01-04T14:36:35.888+08:00  INFO 16856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2024-01-04T14:36:35.897+08:00  INFO 16856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-04T14:36:35.897+08:00  INFO 16856 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-04T14:36:35.924+08:00  INFO 16856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/psi]    : Initializing Spring embedded WebApplicationContext
+2024-01-04T14:36:35.924+08:00  INFO 16856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 608 ms
+2024-01-04T14:36:36.153+08:00  INFO 16856 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-04T14:36:36.172+08:00  INFO 16856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-04T14:36:36.258+08:00  INFO 16856 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67d5ac2f
+2024-01-04T14:36:36.259+08:00  INFO 16856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-04T14:36:36.924+08:00  INFO 16856 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-04T14:36:36.944+08:00  WARN 16856 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-04T14:36:36.958+08:00  INFO 16856 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-04T14:36:37.072+08:00  WARN 16856 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-01-04T14:36:37.284+08:00  INFO 16856 --- [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\NTPU\.keystore] using alias [tomcat] with trust store [null]
+2024-01-04T14:36:37.294+08:00  INFO 16856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/psi'
+2024-01-04T14:36:37.299+08:00  INFO 16856 --- [main] c.e.psi.SpringBootPsiMyApplication       : Started SpringBootPsiMyApplication in 2.211 seconds (process running for 2.545)
+2024-01-04T14:36:54.132+08:00  INFO 16856 --- [https-jsse-nio-8443-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/psi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-04T14:36:54.133+08:00  INFO 16856 --- [https-jsse-nio-8443-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-04T14:36:54.133+08:00  INFO 16856 --- [https-jsse-nio-8443-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

@@ -86,7 +86,7 @@ public class StudentScoreController {
 			studentScore.setChineseScore(random.nextInt(101));
 			studentScore.setEnglishScore(random.nextInt(101));
 			studentScore.setMathScore(random.nextInt(101));
-			studentScore.updateTotalAndAverage();
+			//studentScore.updateTotalAndAverage();
 			studentScoreRepository.save(studentScore);
 		}
 		
@@ -98,7 +98,7 @@ public class StudentScoreController {
 	@PostMapping("/")
 	@ResponseBody
 	public String add(StudentScore studentScore) {
-		studentScore.updateTotalAndAverage();
+		//studentScore.updateTotalAndAverage();
 		studentScoreRepository.save(studentScore);
 		return "Add ok" + studentScore;
 	}
@@ -114,9 +114,9 @@ public class StudentScoreController {
 					// "id", "totalScore", "averageScore" 不要複製, 其餘都要複製
 					// 將 uptStudentScore 複製到 studentScore 裡
 					BeanUtils.copyProperties(uptStudentScore, studentScore, "id", "totalScore", "averageScore");
-					studentScore.updateTotalAndAverage();
+					//studentScore.updateTotalAndAverage();
 					// 修改更新，若寫@Transactional 下面這句更新可以不寫↓
-					studentScoreRepository.saveAndFlush(studentScore);
+					studentScoreRepository.saveAndFlush(studentScore); //saveAndFlush 不會等@Transaction還沒完成，其他人也可以看到我還沒修改的東西
 					
 					return "Update OK";
 				}
